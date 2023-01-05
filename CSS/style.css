@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap'); 
+
+body{
+    margin: auto;
+    width: 1400px;
+    height: 1884px;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    
+    padding: 0 50px 0px 50px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+    padding: 0;
+    margin: 0;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19.96px;
+  }
+  h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+  }
+  h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.78px;
+  }
+  strong {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+  a{
+    color: black;
+    text-decoration: none; 
+    cursor: default;
+  }
+
+  i{
+    color: #0065FC;
+  }
+
+header {
+display: flex;
+height: 126px;
+padding: 0;
+margin: 0;
+justify-content: space-between;
+}
+
+#logo {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+display: flex;
+height: 126px;
+}
+
+ul {
+list-style-type: none;
+display: flex;
+align-items: center;
+padding: 0;
+margin: 0;
+}
+
+li { 
+  display: flex;
+  height: 126px;
+  width: 162px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.78px;
+}
+
+li:hover {
+    border-top: 2px solid #0065fc;;
+    color: #0065fc;
+    
+}
+
+
+#research{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+#title{
+  margin-bottom: 0;
+}
+
+form{
+  display: flex;
+  justify-content: space-between;
+  height:49px;
+  width: 375px;
+}
+
+.logo-localisation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px 0px 0px 15px;
+  width: 50px;
+  color: black;
+}
+#research-city{
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  width: 193px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  padding: 0;
+  margin:0;
+  text-indent:10px;
+}
+
+#research-city::placeholder{
+  color: black;
+}
+#research-city:focus {
+  outline: 1px solid #D9D9D9;
+}
+#research-city:focus::placeholder {
+  color: transparent;
+}
+
+#button-search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 16px;
+  gap: 10px;
+  width: 132px;
+  background: #0065FC;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+#logo-search{
+  display: none;
+}
+
+
+#filters{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 31px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    margin: 0;  
+    padding: 0 20px 0 20px;
+}
+.filter:hover{
+  background-color: #DEEBFF;
+  transition: 0.7s;
+}
+
+#eco {
+width: 135px ;
+}
+#family{
+width: 96px;
+}
+#romance{
+width: 132px ;
+}
+#animal{
+width: 186px;  
+}
+
+
+#infobar{
+display: flex; 
+align-items: center;
+justify-content: space-between;
+width: 447px;
+}
+#logo-infobar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+  border-radius: 200px 200px 200px 200px;;
+  width: 24px;
+  height: 24px;
+}
+
+
+#offers {
+    display: flex;
+    justify-content: space-between;
+}
+
+#offers-main{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 67%;
+ background: #F2F2F2;
+border-radius: 20px;
+padding: 30px;
+}
+
+#cards-marseille{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.card-marseille{
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 20px;
+  width: 30%;
+  box-shadow: 0px 3px 15px 0px rgba(133, 52, 52, 0.1);
+  padding: 5px;
+}
+
+.image-main{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 114px;
+  object-fit: cover;
+}
+.grey-star {
+  color: #F2F2F2;
+}
+
+
+#offers-sponsored{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: #F2F2F2;
+  border-radius: 20px;
+ }
+ 
+ #top{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ #cards-popular{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  
+ }
+ .card-popular{
+   display: flex;
+   width: 90%;
+   background: #FFFFFF;
+   border-radius: 20px;
+   box-shadow: 0px 3px 15px 0px rgba(133, 52, 52, 0.1);
+   padding: 5px;
+ }
+.image-sponsored{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 114px;
+    object-fit: cover;
+}
+
+.text-card-popular{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
