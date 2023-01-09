@@ -270,6 +270,9 @@ width: 447px;
   box-shadow: 0px 3px 15px 0px rgba(133, 52, 52, 0.1);
   padding: 5px;
 }
+.card-marseille:hover{
+  cursor : pointer;
+}
 
 .image-main{
   border-top-left-radius: 20px;
@@ -321,10 +324,12 @@ width: 447px;
    box-shadow: 0px 3px 15px 0px rgba(133, 52, 52, 0.1);
    padding: 5px;
  }
+ .card-popular:hover{
+  cursor : pointer;
+}
 
 .image-sponsored{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px 0 0 20px;
     height: 134px;
     width: 40%;
     object-fit: cover;
@@ -341,6 +346,60 @@ width: 447px;
 }
 
 
+#activities{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  height: 493px;
+  margin: 60px 0 60px 0;
+}
+
+#cards-activities{
+  display: flex;
+  justify-content: space-between;
+  height: 445px;
+}
+
+.card-activities{
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px rgba(133, 52, 52, 0.1);
+  justify-content: space-between;
+}
+.card-activities:hover{
+  cursor : pointer;
+}
+
+.image-activities {
+border-radius: 20px 20px 0 0;
+object-fit: cover;
+height: 389px;
+}
+
+.text-activities{
+  padding: 10px;
+}
 
 
+footer{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  background: #F2F2F2;
+  padding: 45px;
+}
 
+.links{
+  width: 30%;
+  padding-left: 20px;
+}
+
+.title-links {
+padding-bottom: 10px;
+}
+
+.links a:hover{
+text-decoration: underline;
+}
