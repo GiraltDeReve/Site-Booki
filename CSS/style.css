@@ -62,9 +62,14 @@ body{
     text-decoration: none; 
     cursor: default;
   }
-
   i{
     color: #0065FC;
+  }
+  .small {
+    font-size: 0.8em;
+  }
+  .big{
+    font-size: 1.2em;
   }
 
 header {
@@ -126,23 +131,23 @@ form{
   display: flex;
   justify-content: space-between;
   height:49px;
-  width: 375px;
+  width: 30%;
 }
 
-.logo-localisation{
+#logo-localisation{
   display: flex;
   align-items: center;
   justify-content: center;
   background: #F2F2F2;
   border: 1px solid #F2F2F2;
   border-radius: 15px 0px 0px 15px;
-  width: 50px;
+  width: 15%;
   color: black;
 }
 #research-city{
   background: #FFFFFF;
   border: 1px solid #F2F2F2;
-  width: 193px;
+  width: 50%;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
@@ -167,7 +172,7 @@ form{
   align-items: center;
   padding: 15px 16px;
   gap: 10px;
-  width: 132px;
+  width: 35%;
   background: #0065FC;
   border: 1px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
@@ -414,7 +419,20 @@ text-decoration: underline;
 @media screen and (min-width : 768px) and (max-width : 992px) {
 
 body{
-    width: 892px;
+    max-width: 892px;
+}
+
+form{
+  width: 50%;
+}
+#logo-localisation{
+  width: 12%;
+}
+#research-city{
+  width: 54%;
+}
+#button-search{
+  width: 35%;
 }
 
 #filters{
@@ -430,7 +448,6 @@ justify-content: space-between;
 #offers-main{
   width: 90%; 
 }
-
 
 #offers-sponsored{
   width:90%;
@@ -468,22 +485,82 @@ footer{
 
 
 @media screen and (min-width : 0px) and (max-width : 768px) {
-  body{
-    width: 728px;
-    height: 4113px;
-    padding:0;
-    margin: 0;
+h1{
+  font-size: 40px;
+  line-height : 50px;
+  padding-top: 60px;
+  margin-right: 100px;
+} 
+h2 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0;
+}
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  padding-left: 20px;
+}
+h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  padding: 0px;
+  margin: 5px;
+}
+h6 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  padding: 0px;
+  margin: 5px;
+}
+p {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+}
+strong {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+}
+.fa-solid{
+  font-size: 2em;
+}
+
+
+body{
+max-width: 768px;
+height: 4113px;
+padding:0;
+margin: 0;
+overflow-x: hidden;
 }
 
 header{
   flex-direction: column;
 }
 #logo{
-  padding-top: 21px;
+  padding: 21px;
+}
+#image-logo{
+  height:38px ;
+  width:122.18px; 
 }
 nav{
   justify-content: space-evenly;
   height: auto;
+  padding-top: 50px;
 }
 ul{
   justify-content: center;
@@ -493,10 +570,11 @@ li{
   width: 100%;
   height: 70px;
   justify-content: center;
-  font-size: 20px;
+  font-size: 32px;
   border-bottom: 2px solid rgba(242, 242, 242, 1)
 }
 li:hover {
+  border-top: none;
   border-bottom: 2px solid #0065fc;;
   color: #0065fc;  
 }
@@ -504,43 +582,122 @@ li:hover {
   width: 50%;
 }
 
-main{
-  padding: 20px;
+
+#research, #filters, #infobar {
+  margin: 40px;
 }
 
+form{
+  width: 100%;
+  height:90px;
+  padding-top: 20px;
+}
+#logo-localisation{
+  width: 13%;
+  border-radius: 34px 0px 0px 34px;
+}
+#research-city{
+  width: 74%;
+  font-size: 30px;
+  text-indent:20px;
+}
+#button-search{
+  width: 13%;
+  border-radius: 0px 34px 34px 0px;
+}
+#logo-search{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#text-search{
+  display: none;
+}
+  
 #filters{
-width: auto;
-flex-wrap: wrap;
+  width: auto;
+  flex-wrap: wrap;
 }
+.filter-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 160px ;
 
+}
+#filter-tittle{
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  padding: 20px 0 20px 0;
+  margin: 0;
+}
 .filter{
-
+  justify-content: flex-start;
 }
+#eco, #family, #romance, #animal {
+  width: 40%;
+  height: 60px;
+}
+
+#infobar{
+  width: 90%;
+}
+#logo-infobar {
+  display: flex;
+  border: 1px solid #D9D9D9;
+  border-radius: 200px 200px 200px 200px;
+  width: 44px;
+  height: 34px;
+  margin-right: 20px;
+}
+
+#offers{
+  flex-direction: column-reverse;
+  height: 90%;
+}
+#offers-sponsored{
+  border-radius: 0;
+  width: 90%;
+  height: 550px;
+}
+
+.card-popular{
+  margin: ;
+}
+
+
 
 #offers-main{
   padding: 20px;
   background:#FFFFFF; 
-  height: 1299px;
+  width: 90%;
+  height: 50%;
 }
 #cards-marseille{
-  flex-direction: column;
+  flex-wrap: wrap;
   height: 1254px;
 }
  .card-marseille{
   height: 199px;
 width: 90%;
  }
-
  .image-main{
   height: 124px;
-  wi
- }
+}
+
+
+
 
 #activities{
+  width: 90%;
   height: 886px;
+
 }
 #cards-activities{
-  flex-direction: column;
+  flex-wrap: wrap;
   height: 832px;
   justify-content: space-between;
 }
@@ -551,6 +708,16 @@ width: 90%;
   height: 134px;
   width: 100%;
 }
+
+footer{
+  flex-wrap: wrap;
+  width: 90%;
+}
+.links{
+  width: 90%;
+}
+
+
 }
 
 
