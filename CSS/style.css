@@ -486,27 +486,27 @@ footer{
 
 @media screen and (min-width : 0px) and (max-width : 768px) {
 h1{
-  font-size: 40px;
+  font-size: 42px;
   line-height : 50px;
   padding-top: 60px;
   margin-right: 100px;
 } 
 h2 {
   font-weight: 700;
-  font-size: 44px;
+  font-size: 42px;
   line-height: 50px;
   padding: 0;
   margin: 0;
 }
 h3 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 42px;
   margin: 0;
 }
 h4 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 40px;
   padding-left: 20px;
 }
@@ -519,29 +519,32 @@ h5 {
 }
 h6 {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 32px;
   padding: 0px;
   margin: 5px;
 }
 p {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 31px;
   line-height: 36px;
+  margin: 20px 0 20px 0;
 }
 strong {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 32px;
 }
-.fa-solid{
+
+.small {
+  font-size: 1.2em;
+}
+.big{
   font-size: 2em;
 }
 
-
 body{
 max-width: 768px;
-height: 4113px;
 padding:0;
 margin: 0;
 overflow-x: hidden;
@@ -590,7 +593,7 @@ li:hover {
 form{
   width: 100%;
   height:90px;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 #logo-localisation{
   width: 13%;
@@ -624,7 +627,7 @@ form{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 160px ;
+  height: 200px ;
 
 }
 #filter-tittle{
@@ -639,18 +642,24 @@ form{
 }
 #eco, #family, #romance, #animal {
   width: 40%;
-  height: 60px;
+  height: 40%;
+  border-radius: 40px;
 }
 
 #infobar{
   width: 90%;
 }
+#infobar-tablet{
+  justify-content: flex-start;
+  display: flex;
+  height: 70px;
+}
 #logo-infobar {
   display: flex;
   border: 1px solid #D9D9D9;
   border-radius: 200px 200px 200px 200px;
-  width: 44px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   margin-right: 20px;
 }
 
@@ -658,63 +667,107 @@ form{
   flex-direction: column-reverse;
   height: 90%;
 }
+
 #offers-sponsored{
   border-radius: 0;
   width: 90%;
-  height: 550px;
+  height: 1100px;
 }
-
+#top{
+  padding-top: 25px;
+}
+#cards-popular{
+  flex-wrap: wrap;
+  height: 80%;
+  padding-bottom: 10%;
+}
 .card-popular{
-  margin: ;
+  height: 30%;
+  border-radius: 40px; 
 }
-
-
+.image-sponsored{
+  height: 100%;
+  width: 40%;
+  border-radius: 40px 0 0 40px;
+}
+.description-card-popular{
+  padding: 35px;
+}
 
 #offers-main{
-  padding: 20px;
+  padding: 60px 35px 35px 35px;
   background:#FFFFFF; 
   width: 90%;
-  height: 50%;
+  height: 2850px;
+  justify-content: flex-start;
 }
 #cards-marseille{
   flex-wrap: wrap;
-  height: 1254px;
+  height: 93%;
+  padding-top: 50px;
 }
  .card-marseille{
-  height: 199px;
-width: 90%;
- }
- .image-main{
-  height: 124px;
+  height: 15%;
+  width: 100%;
+  border-radius: 40px;
 }
-
+ .image-main{
+  height: 60%;
+  border-radius: 40px 40px 0 0;
+}
+.text-card-marseille {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  height: 35%;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+#text-main{
+  display: none;
+}
 
 
 
 #activities{
   width: 90%;
-  height: 886px;
-
+  height: 1820px;
+  margin: 0;
+  padding: 0 40px 100px 40px ;
 }
 #cards-activities{
   flex-wrap: wrap;
-  height: 832px;
-  justify-content: space-between;
+  height: 95%;
+}
+#title-activities{
+width: 40%;
 }
 .card-activities{
-  height: 190px;
+  height: 22%;
+  width: 100%;
+  border-radius: 40px; 
 }
 .image-activities{
-  height: 134px;
+  height: 75%;
   width: 100%;
+  object-position: top;
+  border-radius: 40px 40px 0 0; 
 }
+#img-portrait{
+  object-position: 50% 40%;
+}
+.text-activities{
+  padding: 20px 10px 20px 10px;
+}
+
 
 footer{
   flex-wrap: wrap;
   width: 90%;
+  height: 800px;
 }
 .links{
-  width: 90%;
+  width: 95%;
 }
 
 

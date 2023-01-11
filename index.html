@@ -35,7 +35,7 @@
         <input id="research-city" type="text" placeholder="Marseille, France" required></textarea>
         <!-- <input id="button-search" type="submit" value="Rechercher" input> -->
         <button id="button-search"> 
-            <i id="logo-search" class="fa-solid fa-magnifying-glass logo-search"></i><h3 id="text-search">Rechercher</h3>
+            <i id="logo-search" class="fa-solid fa-magnifying-glass logo-search big"></i><h3 id="text-search">Rechercher</h3>
         </button>
       </form>
     </section>
@@ -63,7 +63,9 @@
       </div>
 
       <div id="infobar">
-        <i id="logo-infobar" class="fa-solid fa-info"></i>
+        <div id="infobar-tablet">
+        <i id="logo-infobar" class="fa-solid fa-info big"></i>
+    </div>
         <p> Plus de 500 logements sont disponibles dans cette ville </p>
       </div>
     
@@ -157,13 +159,13 @@
                 </div>
             </a>
          </div>
-         <h3> <a href="#">Afficher plus</a> </h3>
+         <h3 id="text-main"> <a href="#">Afficher plus</a> </h3>
       </div>
 
       <article id="offers-sponsored">
             <div id="top">
                 <h2>Les plus populaires</h2>
-                <i class="fa-solid fa-chart-line"></i>
+                <i class="fa-solid fa-chart-line big"></i>
             </div>
 
         <div id="cards-popular">
@@ -220,14 +222,14 @@
     </section>
 
     <section id="activities">
-        <h2>Activités à Marseille</h2>
+        <h2 id="title-activities">Activités à Marseille</h2>
         <div id="cards-activities">
             <a href="#" class="card-activities">
                 <img class="image-activities" src="/Images/Images+Booki/Images Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du Vieux-Port" height="389px" width="302px">
                 <h5 class="text-activities">Vieux-Port</h5>
             </a>
             <a href="#" class="card-activities">
-                <img class="image-activities" src="/Images/Images+Booki/Images Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du Fort de Pomègues" height="389px" width="302px">
+                <img id="img-portrait" class="image-activities" src="/Images/Images+Booki/Images Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du Fort de Pomègues" height="389px" width="302px">
                 <h5 class="text-activities">Fort de Pomègues</h5>
             </a>
             <a href="#" class="card-activities">
