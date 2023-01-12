@@ -4,7 +4,7 @@ body{
     margin: auto;
     width: 1400px;
     height: 1884px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: "Raleway";
     padding: 0 50px 0px 50px;
     justify-content: space-evenly;
@@ -12,50 +12,50 @@ body{
 
   h1 {
     font-weight: 700;
-    font-size: 22px;
-    line-height: 25.83px;
+    font-size: 1.4em;
+    line-height: 1.6em;
   }
   h2 {
     font-weight: 700;
-    font-size: 22px;
-    line-height: 25.83px;
+    font-size: 1.4em;
+    line-height: 1.6em;
     padding: 0;
     margin: 0;
   }
   h3 {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21.13px;
+    font-size: 1.1em;
+    line-height: 1.3em;
     margin: 0;
   }
   h4 {
     font-weight: 700;
-    font-size: 17px;
-    line-height: 19.96px;
+    font-size: 1em;
+    line-height: 1.2em;
   }
   h5 {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 18.78px;
+    font-size: 1em;
+    line-height: 1.2em;
     padding: 0px;
     margin: 5px;
   }
   h6 {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16.44px;
+    font-size: 0.9em;
+    line-height: 1em;
     padding: 0px;
     margin: 5px;
   }
   p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
+    font-size: 1em;
+    line-height: 1.2em;
   }
   strong {
     font-weight: 600;
-    font-size: 14px;
-    line-height: 16.44px;
+    font-size: 0.9em;
+    line-height: 1em;
   }
   a{
     color: black;
@@ -206,7 +206,7 @@ form{
   background-color: #DEEBFF;
   transition: 0.7s;
 }
-.filter-links{
+#filter-links{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -247,6 +247,7 @@ width: 447px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 20px;
 }
 
 #offers-main{
@@ -265,7 +266,7 @@ width: 447px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  height: 80%;
+  height: 85%;
   padding: 0;
   margin: 0;
 }
@@ -289,7 +290,6 @@ width: 447px;
   border-top-right-radius: 20px;
   height: 114px;
   object-fit: cover;
-  padding-bottom: 5px;
 }
 
 .text-card-marseille{
@@ -341,14 +341,14 @@ width: 447px;
 .image-sponsored{
     border-radius: 20px 0 0 20px;
     height: 134px;
-    width: 40%;
+    width: 35%;
     object-fit: cover;
 }
 .description-card-popular{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 .text-card-popular{
   display: flex;
@@ -389,7 +389,10 @@ height: 389px;
 }
 
 .text-activities{
-  padding: 10px;
+  padding-left: 10px;
+  align-items: center;
+  display: flex;
+  height: 10%;
 }
 
 
@@ -438,6 +441,9 @@ form{
 #filters{
   width: auto;
 }
+#filter-links{
+width: 90%;
+}
 
 #offers{
 flex-direction: column;
@@ -446,13 +452,15 @@ justify-content: space-between;
 }
 
 #offers-main{
-  width: 90%; 
+  width: auto; 
+  margin-bottom: 30px;
 }
 
 #offers-sponsored{
-  width:90%;
+  width:auto;
   height: 208px;
   justify-content:space-between ;
+  margin-bottom: 20px;
 }
 #cards-popular{
   flex-direction: row;
@@ -476,6 +484,12 @@ justify-content: space-between;
   height: 211px;
   width: 100%;
 }
+.text-activities{
+  padding-left: 10px;
+  align-items: center;
+  display: flex;
+  height: 15%;
+}
 
 footer{
   width: 90%;
@@ -486,61 +500,51 @@ footer{
 
 @media screen and (min-width : 0px) and (max-width : 768px) {
 h1{
-  font-size: 42px;
-  line-height : 50px;
+  font-size: 2.6em;
+  line-height : 1em;
   padding-top: 60px;
   margin-right: 100px;
 } 
 h2 {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 50px;
-  padding: 0;
-  margin: 0;
+
+  font-size: 2.6em;
+  line-height: 1em;
 }
 h3 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 42px;
-  margin: 0;
+  font-size: 2em;
+  line-height: 1em;
 }
 h4 {
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 40px;
+  font-size: 1.4em;
+  line-height: 1em;
   padding-left: 20px;
 }
 h5 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 36px;
-  padding: 0px;
-  margin: 5px;
+  font-size: 2em;
+  line-height: 1.2em;
 }
 h6 {
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 32px;
-  padding: 0px;
-  margin: 5px;
+  font-size: 1.6em;
+  line-height: 1em;
 }
 p {
-  font-weight: 400;
-  font-size: 31px;
-  line-height: 36px;
+  font-size: 1.9em;
+  line-height: 1em;
   margin: 20px 0 20px 0;
 }
 strong {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1em;
+  line-height: 1em;
 }
-
 .small {
   font-size: 1.2em;
 }
 .big{
   font-size: 2em;
+}
+.fa-info{
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
 body{
@@ -623,7 +627,7 @@ form{
   width: auto;
   flex-wrap: wrap;
 }
-.filter-links {
+#filter-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -678,12 +682,13 @@ form{
 }
 #cards-popular{
   flex-wrap: wrap;
-  height: 80%;
+  height: 82%;
   padding-bottom: 10%;
 }
 .card-popular{
-  height: 30%;
+  height: 29%;
   border-radius: 40px; 
+  padding: 10px;
 }
 .image-sponsored{
   height: 100%;
@@ -746,6 +751,7 @@ width: 40%;
   height: 22%;
   width: 100%;
   border-radius: 40px; 
+  justify-content: space-evenly;
 }
 .image-activities{
   height: 75%;
