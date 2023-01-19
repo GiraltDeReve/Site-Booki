@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="/CSS/style.css" rel="stylesheet">
+    <!-- LIEN AU FICHIER CSS -->
 
     <script src="https://kit.fontawesome.com/065a8ca0d0.js" crossorigin="anonymous"></script>
+    <!-- LIEN AU KIT FONTAWESOME -->
      
     <title>BOOKI</title>
 
 </head>
 
 <body>
- <header>
+
+    <!-- //////////////////////////////////////////////////     HEADER : LOGO + Naviguation        ////////////////////////////////////////////////////////// -->
+ <header> 
     <div id="logo">
  <img id="image-logo" src="/Images/Images+Booki/ImagesBooki/logo/Booki@3x.png" alt="logo de l'entreprise Booki">
 </div>
- <nav>
+ <nav> 
+    <!-- // Naviguation avec une liste + balises a + liens vers les parties du site affiliés -->
     <ul>
         <li><a class="naviguation" href="#offers">Hébergements</a></li>
         <li><a class="naviguation" href="#activities">Activités</a></li>
@@ -26,66 +31,80 @@
 </nav>
 </header>
 
-<main>
+<!-- //////////////////////////////////////     MAIN : Sections Research + Filters + Infobar + Offers + Activities        ////////////////////////////////// -->
+<main> 
+<!-- ----------------------------------  RESEARCH  -------------------------- -->
     <section id="research">
+        <!--  STUCTURE = titre de la page + texte + form -->
       <h1 id="title" >Trouvez votre hébergement pour des vacances de rêve </h1>
       <p>En plein centre-ville ou en pleine nature</p>
       <form action="#" method="get">
         <i id="logo-localisation" class="fa-solid fa-location-dot big"></i>
-        <input id="research-city" type="text" placeholder="Marseille, France" required>
+        <!-- // OPTION "required" pour alerte si formulaire vide -->
+        <input id="research-city" type="text" placeholder="Marseille, France" required> 
         <button id="button-search">Rechercher</button>
+        <!-- // Ajout icone search pour le mobile -->
         <button id="button-search-mobile"> 
-            <i id="logo-search" class="fa-solid fa-magnifying-glass big"></i>
+            <!-- //utilisation class font-awesome pour taille -->
+            <i id="logo-search" class="fa-solid fa-magnifying-glass big"></i> 
         </button>
-
       </form>
     </section>
-
+<!-- ----------------------------------  FILTERS  ------------------------- -->
       <div id="filters">
+        <!--  STRUCTURE = titre h4 + div "filter-links" -->
         <h4 id="filter-tittle">Filtres</h4>
         <div id="filter-links">
-            <a href="" class="filter" id="eco">
-                <i class="fa-solid fa-money-bill-wave big blue-icon"></i>
+            <a href="" class="filter" id="eco"> 
+                <!-- // ajout id pour appliquer une taille  différente à chaque filter -->
+                <i class="fa-solid fa-money-bill-wave big"></i> 
                 <h4>Economique</h4>
             </a>
             <a href="" class="filter" id="family"> 
-                <i class="fa-solid fa-person big blue-icon"></i>
+                <i class="fa-solid fa-person big"></i>
                 <h4>Familial</h4>
             </a>
             <a href="" class="filter" id="romance"> 
-                <i class="fa-solid fa-heart big blue-icon"></i>
+                <i class="fa-solid fa-heart big"></i>
                 <h4>Romantique</h4>
             </a>
             <a href="" class="filter" id="animal"> 
-                <i class="fa-solid fa-dog big blue-icon"></i>
+                <i class="fa-solid fa-dog big"></i>
                 <h4>Animaux autorisés</h4>
             </a>
         </div> 
       </div>
-
+<!-- -------------------------------  INFOBAR   -------------------------------- -->
       <div id="infobar">
-        <div id="infobar-tablet">
+        <div id="infobar-mobile">
+            <!-- rajout id infobar-mobile afin de changer l'emplacement du logo sur la format mobile -->
         <i id="logo-infobar" class="fa-solid fa-info small"></i>
     </div>
         <p> Plus de 500 logements sont disponibles dans cette ville </p>
       </div>
-    
-
+<!-- ------------------------------ OFFERS --------------------------------- -->    
     <section id="offers">
+        <!--  STRUCTURE = offers-main + offers-sponsored -->
+
       <div id="offers-main">
+        <!-- Structure = titre h2 + div cards-marseille -->
          <h2>Hébergements à Marseille</h2>
          <div id="cards-marseille">
             <a href="#" class="card-marseille">
-                <img class="image-main" src="/Images/Images+Booki/ImagesBooki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo de l'auberge La Canebière">
+                <!-- les cartes entiéres peuvent renvoyer à un lien correspondant à hotel ou activité -->
+                <img class="image-main" src="/Images/Images+Booki/ImagesBooki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo de l'auberge La Canebière"> 
+                <!--  ajout de alt pour descrption photo -->
                 <div class="text-card-marseille">
                     <h5>Auberge La Canebière</h5>
-                    <h6>Nuit à partir de 25<strong>€</strong></h6>
+                    <h6>Nuit à partir de 25<strong>€</strong></h6> 
+                    <!--  afin que l'€ s'affiche plus grand et en gras, ajout de la balise strong -->
                     <div class="stars">
                         <i class="fa-solid fa-star small"></i>
                         <i class="fa-solid fa-star small"></i>
                         <i class="fa-solid fa-star small"></i>
                         <i class="fa-solid fa-star small"></i>
                         <i class="fa-solid fa-star small grey-star"></i>
+                        <!-- utilisation de la class couleur de font awesome pour étoile grise -->
                     </div>
                 </div>
             </a>
@@ -163,6 +182,7 @@
          <h3 id="text-main"> <a href="#">Afficher plus</a> </h3>
       </div>
 
+<!-- ------------------------------------------------------------------- -->
       <article id="offers-sponsored">
             <div id="top">
                 <h2>Les plus populaires</h2>
@@ -221,8 +241,9 @@
         </div>
         </article>
     </section>
-
+<!-- ---------------------------  ACTIVITIES   ---------------------------------------- -->
     <section id="activities">
+        <!-- STRUCTURE = titre h2 + div cards-activities -->
         <h2 id="title-activities">Activités à Marseille</h2>
         <div id="cards-activities">
             <a href="#" class="card-activities">
@@ -245,6 +266,7 @@
     </section>
 </main>
 
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
 <footer>
     <div class="links">
        <h3 class="title-links">À propos</h3> 
