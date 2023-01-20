@@ -157,13 +157,13 @@ form{
   color: black;
   /* :pour corriger la police par defaut du placeholder */
 }
+#research-city:focus::placeholder {
+  color: transparent;
+  /* une fois cliqué, le texte disparait  */
+}
 #research-city:focus {
   outline: 1px solid #D9D9D9;
   /* pour qu'une fois cliquer, la bordure ait une couleur différente */
-}
- #research-city:focus::placeholder {
-  color: transparent;
-  /* une fois cliqué, le texte disparait  */
 }
 
 #button-search{
@@ -795,3 +795,4 @@ footer{
 }
 
 
+ 
