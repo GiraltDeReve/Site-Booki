@@ -188,6 +188,7 @@ form{
     margin-top: 31px;
 }
 .filter{
+  /* box-sizing: border-box; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -220,6 +221,10 @@ width: 132px ;
 #animal{
 width: 186px;  
 }
+
+/* #filter-links a h4 {
+  padding-left: 15px;
+} */
 
 /* ____________________________________   INFOBAR   _______________________________ */
 #infobar{
@@ -409,7 +414,7 @@ text-decoration: underline;
 
 /* ----------------------------------  TABLETTE  ------------------------------------------- */
 
-@media screen and (min-width : 768px) and (max-width : 992px) {
+@media screen and (max-width : 992px) {
 
 body{
     max-width: 992px;
@@ -497,7 +502,7 @@ footer{
 
 /* ----------------------------------  MOBILE  ------------------------------------------- */
 
-@media screen and (min-width : 0px) and (max-width : 768px) {
+@media screen and (max-width : 768px) {
 
 /* ____________________________________   POLICE  _______________________________ */
 /* changement des polices pour qu'elles prenne tplus de place à l'écran */
@@ -700,6 +705,7 @@ form{
 }
 .card-popular{
   height: 29%;
+  width: 95%;
   border-radius: 40px; 
   padding: 10px;
 }
