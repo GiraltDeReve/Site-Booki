@@ -4,23 +4,22 @@ Bienvenue dans le projet Booki, un site web statique de réservations d'hôtels 
 Ce projet a été réalisé dans le cadre de ma formation de Développeuse Web sur OpenClassrooms et a été validé en soutenance sans correction majeure.
 
 ## Aperçu
+Booki est un site web statique qui a été créé dans le but de se familiariser avec les concepts fondamentaux de la création de pages web en utilisant HTML et CSS. Le projet comprend les éléments suivants :
 
-Booki est une application web simple et élégante qui permet aux utilisateurs de rechercher, de consulter et de réserver des chambres d'hôtel en ligne. Le site offre les fonctionnalités suivantes :
-
-- Recherche de chambres d'hôtel par destination et dates de séjour.
-- Affichage des détails des chambres, y compris les tarifs, les équipements et les photos.
-- Processus de réservation convivial avec formulaire de réservation.
-- Page de confirmation de réservation.
-- Interface utilisateur intuitive et responsive pour une expérience utilisateur optimale sur tous les appareils.
+- Utilisation de HTML pour la structuration du contenu.
+- Utilisation de CSS pour la mise en forme et la mise en page des éléments.
+- Création de boutons, de listes et d'autres éléments d'interface utilisateur.
+- Utilisation de propriétés CSS telles que `display` et `flex` pour organiser le contenu de manière esthétique.
+- Un design simple mais élégant pour mettre en pratique les compétences acquises.
 
 ## Technologies Utilisées
 
 Ce projet a été développé en utilisant les technologies suivantes :
 
-- HTML : La structure de base de chaque page du site.
-- CSS : La mise en page et la mise en forme visuelle de toutes les pages.
-- [Bootstrap](https://getbootstrap.com/) : Un framework CSS qui a été utilisé pour améliorer la mise en page et la convivialité du site.
-- Éditeur de texte de votre choix (par exemple, Visual Studio Code) pour la rédaction du code.
+- HTML : La structure de base du site.
+- CSS : La mise en page et la mise en forme visuelle du site.
+- Éditeur de texte Visual Studio Code pour la rédaction du code.
+- Git : Utilisé pour la gestion de version du code source.
 
 ## Comment Tester
 
