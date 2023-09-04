@@ -28,7 +28,7 @@ Si vous souhaitez consulter le site Booki, veuillez suivre ce lien : https://gir
 ## Captures d'écran
 
 ![image](https://github.com/GiraltDeReve/Site-Booki/assets/113437966/b3f26ecf-73c9-40ea-b10f-85c901c1887e)
-![image](https://github.com/GiraltDeReve/Site-Booki/assets/113437966/9a0ad313-dc78-4cd9-9e28-a94a985addb4)
+![image](https://github.com/GiraltDeReve/Site-Booki/assets/113437966/fb6adc15-388a-4938-b8c1-e8fd4b77a703)
 
 N'hésitez pas à contribuer, signaler des problèmes ou suggérer des améliorations en ouvrant une issue.
 
